@@ -29,7 +29,7 @@ server.route({
     else{
       obj.error = "Zip code required";
     }
-    return object
+    return obj;
   }
 
 });
