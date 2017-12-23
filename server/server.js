@@ -22,7 +22,7 @@ server.route({
   method:'GET',
   path: '/current/{zip}',
   handler: function(request, h){
-    let object = {};
+    let obj = {};
     if ( request.params.zip != null ){
       return Weather.getCurrent(request.params.zip);
     }
